@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #afbab5;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    justify-content: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #323634;
+    color: #fff;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.logo{
+    font-size: 32px;
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.registro:hover{
+    background-color: #222424;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.login:hover{
+    background-color: #222424;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li{
+    padding: 5px 14px;
+}
+
+input{
+    width: 650px;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(61, 61, 61);
+    box-sizing: border-box;
+    border: 0;
+    color: #b6c2bc;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 0;
+    height: 45px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+input:hover{
+    background-color: #474747;
+    transition: 0.3s ease;
+}
+
+button{
+    position: relative;
+    justify-content: center;
+    height: 45px;
+    width: 100px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border: 0;
+    padding: 5px;
+    background-color: #db1c15;
+    color: black;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #e15f5a;
+    transition: 0.3s ease;
+}
+
+.acima-pesquisa{
+    padding: 10px;
+}
+
+.texto-pesquisa{
+    font-size: 24px;
+}
+
+.populares{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.table{
+    padding: 2px;
+    justify-content: space-between;
+    position: relative;   
+    background-position: 10px 10px;
+}
+
+.lista-populares{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #373b39;
+}
+
+.item-populares{
+    float: left;
+}
+
+.item-populares a{
+    display: block;
+    color: #b6c2bc;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.item-populares a:hover{
+    background-color: #69706d;
+    transition: 0.3s ease;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.lista-itens{
+    flex: 26px;
+    max-width: 260px;
+    margin: 3px auto;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.user-name{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer{
+    background-color: #222424;
+    color: #5c635f;
+    margin-top: 2px;
+    padding: 5px;
+    text-align: left;
+}

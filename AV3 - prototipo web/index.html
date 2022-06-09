@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Ajudando você a encontrar o melhor serviço por perto e por longe"/>
+    <title>IJob - Encontre serviços perto e longe de você</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!--Barra de navegação-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" target="_self">GPWork</a>
+        </div>
+            <ul class="nav-links">
+                <div class="menu">
+                <li class="registro"><a href="#">Registre-se</a></li>
+                <li class="login"><a href="#">Entrar</a></li>
+                </div>
+            </ul>
+    </nav>
+    <!--Barra de pesquisa até o mapa-->
+    <section class="primeira-faixa">
+        <div class="acima-pesquisa">
+            <p class="texto-pesquisa">Encontre um serviço <strong>próximo</strong> a você</p>
+        </div>
+        <div class="searchbar">
+            <form action="#" method="get" class="form">
+                <input  type="text" placeholder="Um serviço perto de você...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div id="map">
+            <script>
+                function initMap() {
+                    // The location of Uluru
+                    const salvador = { lat: -12.9711100, lng: -38.5108300 };
+                    // The map, centered at Uluru
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 15,
+                        center: salvador,
+                    });
+                    // The marker, positioned at Uluru
+                    const marker = new google.maps.Marker({
+                       position: salvador,
+                        map: map,
+                    });
+                    }
+
+                window.initMap = initMap;
+            </script>
+        </div>
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8SaoNHx6l-1ccTQLZ9TZXtXZJKJVS_8E&callback=initMap">
+        </script>
+    </section>
+    <!--Lista de itens populares-->
+    <section class="segunda-faixa">
+        <div class="acima-pesquisa">
+            <p class="texto-pesquisa">Ou... Encontre um serviço <strong>espeficio</strong></p>
+        </div>
+        <div class="searchbar">
+            <form action="#" method="get" class="form">
+                <input  type="text" placeholder="Qual serviço você gostaria de encontrar?">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+            <div class="populares">
+                <h2>Serviços mais procurados</h2>
+            </div>
+            <div class="table">
+                    <ul class="lista-populares">
+                        <li class="item-populares"><a href="#">Profissional de limpeza</a></li>
+                        <li class="item-populares"><a href="#">Técnico eletricista</a></li>
+                        <li class="item-populares"><a href="#">Técnico de informática</a></li>
+                        <li class="item-populares"><a href="#">Montador de móveis</a></li>
+                        <li class="item-populares"><a href="#">Técnico hidráulico</a></li>
+                        <li class="item-populares"><a href="#">Designer</a></li>
+                        <li class="item-populares"><a href="#">Ensino à distância</a></li>
+                        <li class="item-populares"><a href="#">Home Fitness</a></li>
+                        <li class="item-populares"><a href="#">Psicoterapia</a></li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <!--Exemplo de coisas feitas pelos usuários-->
+    <section class="terceira-faixa">
+        <div class="acima-pesquisa">
+            <h4 class="texto-pesquisa">Conheça pessoas</h4>
+        </div>
+        <div class="box">
+            <div class="lista-itens">
+                <a href="#" class="img">
+                    <img src="/imagens/img-teste.jpg" alt="img"/>
+                </a>
+                <div class="card-body">
+                    <div class="user-name">
+                        <small>
+                            <span>Nome do usuario</span>
+                        </small>
+                    </div>
+                    <a href="#">Categoria</a>
+                </div>
+            </div>
+            <div class="lista-itens">
+                <a href="#">
+                    <img src="/imagens/img-teste-4.jpg" alt="img"/>
+                </a>
+                <div class="card-body">
+                    <div class="user-name">
+                        <small>
+                            <span>Nome do usuario</span>
+                        </small>
+                    </div>
+                    <a href="#">Categoria</a>
+                </div>
+            </div>
+            <div class="lista-itens">
+                <a href="#" target="_self">
+                    <img src="/imagens/img-teste-2.jpg" alt="img">
+                </a>
+                <div class="card-body">
+                    <div class="user-name">
+                        <small>
+                            <span>Nome do usuario</span>
+                        </small>
+                    </div>
+                    <a href="#">Categoria</a>
+                </div>
+            </div>
+            <div class="lista-itens">
+                <a href="#">
+                    <img src="/imagens/img-teste-3.jpg" alt="img">
+                </a>
+                <div class="card-body">
+                    <div class="user-name">
+                        <small>
+                            <span>Nome do usuario</span>
+                        </small>
+                    </div>
+                    <a href="#">Categoria</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <p>Feito por Nathan de Oliveira para atividade avaliativa</p>
+    </footer>
+</body>
+</html>
